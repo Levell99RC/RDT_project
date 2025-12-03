@@ -13,7 +13,7 @@ class FileHandler {
 	public FileHandler(String filename) throws IOException {
 		filetosend = new String(filename);
 		file = new RandomAccessFile(filetosend, "r");
-		no_of_chunks = (int) file.length() / chunkSize;
+		no_of_chunks = (int) Math.ceil( (double) file.length() / chunkSize);
 	}
 
 	byte[] readChunk(int chunk) {
