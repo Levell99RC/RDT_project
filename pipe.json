@@ -1,0 +1,9 @@
+{
+  "client_ip": "127.0.0.1",
+"server_ip": "127.0.0.1",
+"client_port":1230,
+"server_port":8080,
+"port_no":4040,
+"prob":0.25,
+"seed":1000
+}
