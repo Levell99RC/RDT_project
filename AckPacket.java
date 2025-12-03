@@ -23,6 +23,9 @@ public class AckPacket implements Packet {
 	}
 
 	public AckPacket() {
+		cksum = -1;
+		len = -1;
+		ackno = -1;
 	}
 
 	public AckPacket(byte[] bytes) throws IOException {
